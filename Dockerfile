@@ -14,7 +14,8 @@
 # docker run -i --rm -p 8080:8080 quarkus/user-service
 #
 ###
-FROM registry.access.redhat.com/ubi8/ubi-minimal:8.9
+FROM docker.io/redhat/ubi8-minimal:8.10-896
+
 WORKDIR /work/
 RUN chown 1001 /work \
     && chmod "g+rwX" /work \
